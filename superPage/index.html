@@ -169,7 +169,7 @@
 				<button>Нажми</button>
 				<button>Нажми</button>
 				<button disabled>Нажми</button>
-				<button autofocus>Нажми</button>
+				<button>Нажми</button>
 				<button type="submit">Submit</button>
 				<button>Нажми</button>
 				<button>Нажми</button>
@@ -263,22 +263,22 @@
 
 				<p>Table with colgroup and col</p>
 				<table>
-				  <colgroup>
-					<col style="background-color: #0f0" />
-					<col span="2" />
-				  </colgroup>
-				  <tr>
-					<th>Lime</th>
-					<th>Lemon</th>
-					<th>Orange</th>
-				  </tr>
-				  <tr>
-					<td>Green</td>
-					<td>Yellow</td>
-					<td>Orange</td>
-				  </tr>
+					<colgroup>
+						<col style="background-color: #0f0" />
+						<col span="2" />
+					</colgroup>
+					<tr>
+						<th>Lime</th>
+						<th>Lemon</th>
+						<th>Orange</th>
+					</tr>
+					<tr>
+						<td>Green</td>
+						<td>Yellow</td>
+						<td>Orange</td>
+					</tr>
 				</table>
-		
+
 
 
 			</fieldset>
@@ -288,16 +288,108 @@
 		<article>
 			<fieldset>
 				<legend>
-					Шаблон
+					Группа колонок
 				</legend>
+
+				<table>
+					<caption>Superheros and sidekicks</caption>
+					<colgroup>
+						<col>
+						<col span="2" class="batman">
+						<col span="2" class="flash">
+					</colgroup>
+					<tr>
+						<td> </td>
+						<th scope="col">Batman</th>
+						<th scope="col">Robin</th>
+						<th scope="col">The Flash</th>
+						<th scope="col">Kid Flash</th>
+					</tr>
+					<tr>
+						<th scope="row">Skill</th>
+						<td>Smarts</td>
+						<td>Dex, acrobat</td>
+						<td>Super speed</td>
+						<td>Super speed</td>
+					</tr>
+				</table>
+
+
+
+			</fieldset>
+		</article>
+
+
+		<article>
+			<fieldset>
+				<legend>
+					Данные
+				</legend>
+				<p>Список с привязкой к данным</p>
+				<ul>
+					<li><data value="398">Mini Ketchup</data></li>
+					<li><data value="399">Jumbo Ketchup</data></li>
+					<li><data value="400">Mega Jumbo Ketchup</data></li>
+				</ul>
 			</fieldset>
 		</article>
 
 
 
-	
 
 
+		<article>
+			<fieldset>
+				<legend>
+					Список вариатов автоподбора
+				</legend>
+
+				<label for="football-team-choice">Choose a favour:</label>
+				<input list="football-team-favour" id="football-team-choice" name="football-team-choice">
+
+				<datalist id="football-team-favour">
+					<option value="Chlensea">
+					<option value="Socity">
+					<option value="Pidreal">
+					<option value="MandaUnited">
+					<option value="Liverpool">
+				</datalist>
+
+
+			</fieldset>
+		</article>
+
+
+		<article>
+			<fieldset>
+				<legend>
+					Элемент описания определения
+				</legend>
+
+				<p>Cryptids of Cornwall:</p>
+
+				<dl>
+					<dt>Beast of Bodmin</dt>
+					<dd>A large feline inhabiting Bodmin Moor.</dd>
+
+					<dt>Morgawr</dt>
+					<dd>A sea serpent.</dd>
+
+					<dt>Owlman</dt>
+					<dd>A giant owl-like creature.</dd>
+				</dl>
+
+			</fieldset>
+		</article>
+
+
+		<article>
+			<fieldset>
+				<legend autofocus>
+					Шаблон
+				</legend>
+			</fieldset>
+		</article>
 
 	</main>
 
