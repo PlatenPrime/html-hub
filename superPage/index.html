@@ -11,31 +11,21 @@
 
 <body>
 
-	<header>
-		<nav>
-			Здесь будет навигация
-		</nav>
-	</header>
-
-	<main>
-		fsfrgrgrgrgrgrgr
-
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/Sp9ZfSvpf7A" frameborder="0"
-			allowfullscreen></iframe>
-
-		<object type="video/mp4" data="https://www.youtube.com/watch?v=Sp9ZfSvpf7A" width="640" height="360"></object>
-
-
-
-	</main>
-
-
-
-
-
-	<footer>
-
-	</footer>
+	<ul>
+		<li>The</li>
+		<li>test</li>
+	  </ul>
+	  <ul>
+		<li>has</li>
+		<li>passed</li>
+	  </ul>
+	  <script>
+		let elements = document.querySelectorAll('ul > li:last-child');
+	  
+		for (let elem of elements) {
+		  alert(elem.innerHTML); // "test", "passed"
+		}
+	  </script>
 
 </body>
 
